@@ -1,0 +1,20 @@
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+int main()
+{
+    int a, b, c, d;
+    
+    cin >> a >> b >> c >> d;
+    
+    if(a / b > c / d){
+        cout << a / __gcd(a, b) << ' ' << b / __gcd(a, b);
+    }
+    else{
+        cout << c / __gcd(c, d) << ' ' << d / __gcd(c, d);
+    }
+
+    return 0;
+}
